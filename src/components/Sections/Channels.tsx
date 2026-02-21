@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { ShoppingBag, Users } from 'lucide-react';
 
 const Channels = () => {

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const About = () => {
   const stats = [
     { label: '合作攤車', value: '50+' },
