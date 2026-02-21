@@ -1,0 +1,74 @@
+/* 1. 引入 Tailwind v4 核心引擎 */
+@import "tailwindcss";
+
+/* 2. 引入 Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+
+/* 3. 設定自定義主題 (取代原本的 tailwind.config.js) */
+@theme {
+  --font-noto: "Noto Sans TC", sans-serif;
+  
+  /* 這裡可以定義金檸本舖的品牌色 */
+  --color-lemon-50: #fefce8;
+  --color-lemon-400: #eab308;
+  --color-lemon-500: #eab308;
+  --color-lemon-600: #ca8a04;
+  --color-lemon-700: #a16207;
+}
+
+/* 4. 全域基礎樣式 */
+@layer base {
+  body {
+    font-family: var(--font-noto);
+    scroll-behavior: smooth;
+    /* v4 依然支援在 CSS 內使用 @apply，但必須確保後方類別存在 */
+    @apply bg-stone-50 text-stone-800;
+  }
+}
+
+/* 5. 滾動動畫類名 (原本 HTML 裡的邏輯) */
+@layer components {
+  .reveal { 
+    opacity: 0; 
+    transform: translateY(30px); 
+    transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1); 
+  }
+  
+  .reveal-left { 
+    opacity: 0; 
+    transform: translateX(-50px); 
+    transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1); 
+  }
+  
+  .reveal-right { 
+    opacity: 0; 
+    transform: translateX(50px); 
+    transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1); 
+  }
+  
+  .revealed { 
+    opacity: 1 !important; 
+    transform: translate(0, 0) !important; 
+  }
+
+  .hover-lift { 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+  
+  .hover-lift:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); 
+  }
+}
+
+/* 6. 自定義捲動進度條 (原本 HTML 的 #scroll-progress) */
+#scroll-progress {
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  width: 0%; 
+  height: 4px;
+  background: #eab308; 
+  z-index: 100;
+  transition: width 0.1s ease-out;
+}
