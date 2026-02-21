@@ -1,3 +1,5 @@
+import imgAboutBrand from '../../assets/images/brand-story-image.jpg';
+
 const About = () => {
   const stats = [
     { label: '合作攤車', value: '50+' },
@@ -10,10 +12,11 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-16 items-center mb-24">
           <div className="relative reveal-left">
+            {/* 這裡把原本的網址換成你 import 的變數 imgAboutBrand，並加上排版限制 */}
             <img 
-              src="https://images.unsplash.com/photo-1523473827533-2a64d0d36748?auto=format&fit=crop&q=80&w=800" 
-              alt="職人製作" 
-              className="rounded-3xl shadow-2xl relative z-10"
+              src={imgAboutBrand} 
+              alt="關於金檸本舖" 
+              className="rounded-3xl shadow-2xl relative z-10 object-cover h-[400px] w-full"
             />
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-100 rounded-full -z-10"></div>
           </div>
