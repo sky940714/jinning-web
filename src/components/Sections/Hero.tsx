@@ -41,10 +41,10 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start reveal delay-300">
             <a href="#wholesale" className="px-8 py-4 bg-stone-900 text-white font-bold rounded-xl shadow-lg hover:bg-stone-800 transition-all hover:-translate-y-1 text-center">
-              批發/創業加盟
+              想把金桔檸檬放到你的攤位/餐車販售? (點我)
             </a>
             <a href="#channels" className="px-8 py-4 bg-yellow-500 text-white font-bold rounded-xl shadow-lg hover:bg-yellow-600 transition-all hover:-translate-y-1 text-center">
-              立即購買/入群
+              馬上買杯來喝喝吧!(快點擊我!)
             </a>
           </div>
         </div>

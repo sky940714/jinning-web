@@ -2,7 +2,7 @@ import imgAboutBrand from '../../assets/images/brand-story-image.jpg';
 
 const About = () => {
   const stats = [
-    { label: '合作攤車', value: '50+' },
+    { label: '合作攤位/餐車', value: '30+' },
     { label: '年銷杯數', value: '100k+' },
     { label: '屏東鮮採', value: '100%' },
   ];
