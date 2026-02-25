@@ -26,7 +26,9 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-stone-50">
+    // 💡 關鍵修復：這裡加上了 overflow-x-hidden (隱藏水平溢出)，強制把所有超出的元素裁切掉
+    <div className="min-h-screen bg-stone-50 overflow-x-hidden">
+      
       {/* 2. 放置啟動畫面，它會根據內部的 2.5 秒定時器自動消失 */}
       <SplashScreen /> 
       
