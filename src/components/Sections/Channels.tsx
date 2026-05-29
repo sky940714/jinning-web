@@ -21,7 +21,7 @@ const Channels = () => {
             <h3 className="text-xl font-bold mb-3">Uber Eats 外送</h3>
             <p className="text-stone-500 mb-8 flex-grow">不出門也能享受新鮮手作的酸甜滋味，周邊區域快速送達。</p>
             {/* 這裡未來可以換成你的 Uber Eats 專屬連結 */}
-            <a href="#" className="inline-block px-8 py-3 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition w-full sm:w-auto mx-auto">
+            <a href="https://www.ubereats.com/tw/store/%E9%87%91%E6%AA%B8%E6%9C%AC%E8%88%96/FyS407c6WiKSigO9YOR_oA?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMiVFNCVCOCU4OSVFNiVCMCU5MSVFOCVCNyVBRjEwJUU4JTk5JTlGNiUyMCVFNiVBOCU5MyUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMkVrWTJJT2Fva3l3Z1RtOHVJREV3TENCVFlXNXRhVzRnVW1Rc0lFeDFlbWh2ZFNCRWFYTjBjbWxqZEN3Z1RtVjNJRlJoYVhCbGFTQkRhWFI1TENCVVlXbDNZVzRnTWpRM0lpRWFId29XQ2hRS0Vna25sbUx2enFoQ05CSGhDWTNqZFJkU1p4SUZOaURtcUpNJTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMmdvb2dsZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQTI1LjA4MjI5ODI5OTk5OTk5OCUyQyUyMmxvbmdpdHVkZSUyMiUzQTEyMS40NzYxMjQzOTk5OTk5OSU3RA%3D%3D" className="inline-block px-8 py-3 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition w-full sm:w-auto mx-auto">
               立即點餐
             </a>
           </div>
